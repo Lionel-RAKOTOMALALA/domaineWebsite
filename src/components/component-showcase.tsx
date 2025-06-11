@@ -3,8 +3,8 @@ import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Title1, Title2, Title3, Title4, Paragraph } from "./ui/typography"
 import { Card } from "./ui/card"
-import { Checkbox } from "./ui/checkbox"
-import { PricingCard } from "./ui/pricing-card"
+import  Checkbox  from "./ui/checkbox"
+import  PricingCard  from "./ui/pricing-card"
 import { FeatureCard } from "./ui/feature-card"
 import { SocialButton } from "./ui/social-button"
 
@@ -169,7 +169,6 @@ const ComponentShowcase = () => {
                   price="0 Ar"
                   description="Parfait pour découvrir l'application"
                   features={["Fonctionnalités de base", "Accès limité", "Support communautaire", "1 appareil"]}
-                  buttonText="Commencer"
                 />
                 <PricingCard
                   title="Premium"

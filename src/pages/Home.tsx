@@ -132,7 +132,7 @@ const Home: React.FC = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                src="../src/assets/img/bgLaptop.png"
+                src="/public/assets/img/bgLaptop.png"
                 alt="App interface"
                 className="absolute inset-0 object-cover rounded-lg z-0"
                 style={{
@@ -148,7 +148,7 @@ const Home: React.FC = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                src="../src/assets/img/Laptop.png"
+                src="/public/assets/img/Laptop.png"
                 alt="Laptop displaying app interface"
                 className="w-full rounded-lg relative z-10"
               />

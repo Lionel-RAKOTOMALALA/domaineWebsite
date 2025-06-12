@@ -153,7 +153,7 @@ export default function SignupPage() {
               <div className="bg-[#181F29]/80 rounded-xl sm:rounded-2xl p-6 sm:p-8 text-white shadow-lg mt-4 sm:mt-6 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-70">
                   <img
-                    src="/assets/img/pourquoiNous.png"
+                    src="/public/assets/img/pourquoiNous.png"
                     alt="Pourquoi nous choisir"
                     className="w-full h-full object-cover"
                   />

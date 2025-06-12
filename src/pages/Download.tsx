@@ -34,12 +34,12 @@ const Download = () => {
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 bg-[#ffffff] p-4 md:p-8 rounded-lg mx-4">
         <div className="mb-0 md:mb-[-31.5px] flex-shrink-0 w-full md:w-1/2 flex justify-center">
           <img
-            src="../src/assets/img/VersBas.png" 
+            src="/public/assets/img/VersBas.png" 
             alt="Homme montre offre"
             className="mb-[-31.5px] w-full h-auto max-w-sm object-contain rounded-lg md:hidden"
           />
           <img
-            src="../src/assets/img/imgOffre.png" 
+            src="/public/assets/img/imgOffre.png" 
             alt="Homme montre offre"
             className="w-full h-auto object-contain rounded-lg hidden md:block"
           />

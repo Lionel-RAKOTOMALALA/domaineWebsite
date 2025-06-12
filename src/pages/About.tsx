@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Paragraph, Title2, Title3, Title4 } from '../components/ui/typography';
+import { motion } from "framer-motion"
 
 interface TeamMember {
   name: string;
@@ -100,7 +101,12 @@ const TeamSection = () => {
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      className="min-h-screen bg-white"
+    >
       {/* Section Introduction */}
       <div className="bg-gray-50 py-10 px-10 sm:px-6 lg:px-24 mb-10">
         <div className="max-w-6xl mx-auto">
@@ -185,7 +191,7 @@ const About = () => {
       </div>
 
       <TeamSection />
-    </div>
+    </motion.div>
   );
 }
 

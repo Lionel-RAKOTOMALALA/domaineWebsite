@@ -1,10 +1,16 @@
 import React from 'react'
 import { Paragraph, Title2, Title3 } from '../components/ui/typography';
 import { Button } from '../components/ui/button';
+import { motion } from "framer-motion"
 
 const Download = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      className="min-h-screen flex flex-col items-center justify-start"
+    >
       <div className="text-center mb-16 max-w-2xl mx-auto px-4">
         <Title2 className='mb-4 mt-12'> Téléchargez dès maintenant</Title2>
         <Paragraph>une expérience fluide et optimisée pour booster votre productivité sur ordinateur</Paragraph>
@@ -48,7 +54,7 @@ const Download = () => {
         </div>
       </div>
 
-    </div>
+    </motion.div>
   );
 }
 

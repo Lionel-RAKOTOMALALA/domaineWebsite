@@ -158,7 +158,7 @@ export default function SignupPage() {
                   <h2 className="text-[20px] sm:text-[24px] font-inter font-bold text-white mb-4 sm:mb-6 text-center">
                     Pourquoi nous choisir ?
                   </h2>
-                  <ul className="space-y-3 sm:space-y-4 ml-8 text-left">
+                  <ul className="space-y-3 sm:space-y-4 ml-0 text-left">
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>

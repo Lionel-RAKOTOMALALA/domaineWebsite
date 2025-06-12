@@ -8,7 +8,7 @@ import { Input } from "../../components/ui/input"
 import { Button } from "../../components/ui/button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
-import { Title3, Paragraph } from "../../components/ui/typography"
+import { Title3, Paragraph, Title2 } from "../../components/ui/typography"
 
 export default function SignupPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -31,10 +31,13 @@ export default function SignupPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F9FAFB] py-4 sm:py-8">
+    <div className="min-h-screen bg-[#F9FAFB] py-8 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
-        {/* Layout principal */}
         <div className="bg-white rounded-xl sm:rounded-2xl shadow-sm p-4 sm:p-8 lg:p-12">
+          <div className="mb-8">
+            <Title2 className="text-[#023246] mb-2">Créer votre compte</Title2>
+            <Paragraph className="text-[#647882]">Commencez votre expérience dès aujourd'hui</Paragraph>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8">
             {/* Colonne gauche */}
             <div className="space-y-4 sm:space-y-6">
@@ -153,7 +156,7 @@ export default function SignupPage() {
                   <Title3 className="text-[20px] sm:text-[24px] font-inter font-bold text-white mb-4 sm:mb-6 text-center">
                     Pourquoi nous choisir ?
                   </Title3>
-                  <ul className="space-y-3 sm:space-y-4 ml-0 text-left -ml-4">
+                  <ul className="space-y-4 sm:space-y-6 text-left -ml-12">
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="flex items-center gap-4">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>

@@ -6,6 +6,8 @@ import { User, Building, Mail, FileText, Eye, EyeOff, Check, Camera } from "luci
 import { SocialButton } from "../../components/ui/social-button"
 import { Input } from "../../components/ui/input"
 import { Button } from "../../components/ui/button"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
 
 export default function SignupPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -121,7 +123,9 @@ export default function SignupPage() {
                   />
                 </div>
                 <div className="lg:col-span-1 flex flex-col items-center justify-center h-full mt-2 sm:mt-4 lg:mt-0">
-                  <h3 className="text-[12px] sm:text-[13px] font-inter font-medium text-[#647882] mb-2 whitespace-nowrap">Votre profil ici</h3>
+                  <h3 className="text-[12px] sm:text-[13px] font-inter font-medium text-[#647882] mb-2 whitespace-nowrap">
+                    Votre profil ici
+                  </h3>
                   <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center hover:bg-gray-50 transition-colors">
                     {profileImage ? (
                       <img
@@ -144,38 +148,48 @@ export default function SignupPage() {
               {/* Card Pourquoi nous choisir */}
               <div className="bg-[#181F29]/80 rounded-xl sm:rounded-2xl p-6 sm:p-8 text-white shadow-lg mt-4 sm:mt-6 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-70">
-                  <img 
+                  <img
                     src="/assets/img/pourquoiNous.png"
                     alt="Pourquoi nous choisir"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="relative z-10">
-                  <h2 className="text-[20px] sm:text-[24px] font-inter font-bold text-white mb-4 sm:mb-6">Pourquoi nous choisir ?</h2>
-                  <ul className="space-y-3 sm:space-y-4">
+                <div className="relative z-10 flex flex-col items-center">
+                  <h2 className="text-[20px] sm:text-[24px] font-inter font-bold text-white mb-4 sm:mb-6 text-center">
+                    Pourquoi nous choisir ?
+                  </h2>
+                  <ul className="space-y-3 sm:space-y-4 ml-16 text-left">
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                        <Check size={12} className="text-white sm:w-3.5 sm:h-3.5" strokeWidth={2.5} />
+                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
                       </div>
-                      <span className="text-[14px] sm:text-[16px] font-inter text-white">Interface intuitive et moderne</span>
+                      <span className="text-[14px] sm:text-[16px] font-inter text-white">
+                        Interface intuitive et moderne
+                      </span>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                        <Check size={12} className="text-white sm:w-3.5 sm:h-3.5" strokeWidth={2.5} />
+                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
                       </div>
-                      <span className="text-[14px] sm:text-[16px] font-inter text-white">Support client 24/7</span>
+                      <span className="text-[14px] sm:text-[16px] font-inter text-white">
+                        Support client 24/7
+                      </span>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                        <Check size={12} className="text-white sm:w-3.5 sm:h-3.5" strokeWidth={2.5} />
+                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
                       </div>
-                      <span className="text-[14px] sm:text-[16px] font-inter text-white">Mises à jour régulières</span>
+                      <span className="text-[14px] sm:text-[16px] font-inter text-white">
+                        Mises à jour régulières
+                      </span>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                        <Check size={12} className="text-white sm:w-3.5 sm:h-3.5" strokeWidth={2.5} />
+                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
                       </div>
-                      <span className="text-[14px] sm:text-[16px] font-inter text-white">Sécurité renforcée</span>
+                      <span className="text-[14px] sm:text-[16px] font-inter text-white">
+                        Sécurité renforcée
+                      </span>
                     </li>
                   </ul>
                 </div>

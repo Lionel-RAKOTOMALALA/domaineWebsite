@@ -158,9 +158,10 @@ export default function SignupPage() {
                   <h2 className="text-[20px] sm:text-[24px] font-inter font-bold text-white mb-4 sm:mb-6 text-center">
                     Pourquoi nous choisir ?
                   </h2>
-                  <ul className="space-y-3 sm:space-y-4 ml-16 text-left">
+                  <ul className="space-y-3 sm:space-y-4 ml-8 text-left">
                     <li className="flex items-center gap-2 sm:gap-3">
-                      <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
                         <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
                       </div>
                       <span className="text-[14px] sm:text-[16px] font-inter text-white">
@@ -168,7 +169,8 @@ export default function SignupPage() {
                       </span>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
-                      <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
                         <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
                       </div>
                       <span className="text-[14px] sm:text-[16px] font-inter text-white">
@@ -176,7 +178,8 @@ export default function SignupPage() {
                       </span>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
-                      <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
                         <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
                       </div>
                       <span className="text-[14px] sm:text-[16px] font-inter text-white">
@@ -184,7 +187,8 @@ export default function SignupPage() {
                       </span>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
-                      <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
                         <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
                       </div>
                       <span className="text-[14px] sm:text-[16px] font-inter text-white">

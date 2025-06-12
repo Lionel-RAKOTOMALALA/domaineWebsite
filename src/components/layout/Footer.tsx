@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo et Description */}
           <div className="space-y-4">
             <Link to="/" className="text-xl font-bold block">
-              AppName
+              Quality Assurance
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
               Simplifiez votre quotidien avec notre application innovante.
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-gray-300 text-sm">
                 <Mail size={16} />
-                contact@appname.com
+                contact@qualityassurance.com
               </li>
               <li className="flex items-center gap-3 text-gray-300 text-sm">
                 <MapPin size={16} />
@@ -95,7 +95,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-10 pt-8 text-center">
-          <p className="text-gray-400 text-sm">© 2025 AppName. Tous droits réservés.</p>
+          <p className="text-gray-400 text-sm">© 2025 Quality Assurance. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

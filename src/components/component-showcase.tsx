@@ -16,7 +16,7 @@ const ComponentShowcase = () => {
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-6 py-4">
-          <Title2>Système de Design - AppName</Title2>
+          <Title2>Système de Design - Quality Assurance</Title2>
         </div>
       </div>
 

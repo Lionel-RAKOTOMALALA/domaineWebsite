@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="text-blue-600 font-bold text-xl">
-            AppName
+            Quality Assurance
           </Link>
           
           {/* Navigation Links */}

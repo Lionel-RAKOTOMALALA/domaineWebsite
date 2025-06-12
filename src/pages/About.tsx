@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Paragraph, Title2, Title3, Title4 } from '../components/ui/typography';
 import { motion } from "framer-motion"
 

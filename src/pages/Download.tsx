@@ -1,4 +1,3 @@
-import React from 'react'
 import { Paragraph, Title2, Title3 } from '../components/ui/typography';
 import { Button } from '../components/ui/button';
 import { motion } from "framer-motion"

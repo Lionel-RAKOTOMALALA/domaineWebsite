@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { User, Building, Mail, FileText, Eye, EyeOff, Check, Camera } from "lucide-react"
+import { User, Building, Mail, FileText, Eye, EyeOff, Camera } from "lucide-react"
 import { SocialButton } from "../../components/ui/social-button"
 import { Input } from "../../components/ui/input"
 import { Button } from "../../components/ui/button"

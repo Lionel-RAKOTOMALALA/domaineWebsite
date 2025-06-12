@@ -195,7 +195,7 @@ const Home: React.FC = () => {
             variants={staggerChildren}
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
-            {[1, 2, 3].map((num, index) => (
+            {[1, 2, 3].map((num) => (
               <motion.div
                 key={num}
                 variants={fadeIn}

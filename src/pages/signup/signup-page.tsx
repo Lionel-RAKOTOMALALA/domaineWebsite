@@ -40,16 +40,12 @@ export default function SignupPage() {
               <Input
                 label="Nom complet"
                 placeholder="John Doe"
-                width="18"
-                height="18"
                 icon={<User size={18} />}
                 className={inputClass}
               />
               <Input
                 type="email"
                 label="Email"
-                width="18"
-                height="18"
                 placeholder="exemple@email.com"
                 icon={<Mail size={18} />}
                 className={inputClass}
@@ -115,8 +111,6 @@ export default function SignupPage() {
                   />
                   <Input
                     label="NIF/STAT"
-                    width="18"
-                    height="18"
                     placeholder="Numéro d'identification fiscale"
                     icon={<FileText size={18} />}
                     className={inputClass}
@@ -158,38 +152,38 @@ export default function SignupPage() {
                   <h2 className="text-[20px] sm:text-[24px] font-inter font-bold text-white mb-4 sm:mb-6 text-center">
                     Pourquoi nous choisir ?
                   </h2>
-                  <ul className="space-y-3 sm:space-y-4 ml-0 text-left">
+                  <ul className="space-y-3 sm:space-y-4 ml-0 text-left -ml-20">
                     <li className="flex items-center gap-2 sm:gap-3">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-4">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
-                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
+                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '16px' }} />
                       </div>
                       <span className="text-[14px] sm:text-[16px] font-inter text-white">
                         Interface intuitive et moderne
                       </span>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-4">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
-                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
+                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '16px' }} />
                       </div>
                       <span className="text-[14px] sm:text-[16px] font-inter text-white">
                         Support client 24/7
                       </span>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-4">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
-                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
+                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '16px' }} />
                       </div>
                       <span className="text-[14px] sm:text-[16px] font-inter text-white">
                         Mises à jour régulières
                       </span>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-4">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
-                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '12px' }} />
+                        <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '16px' }} />
                       </div>
                       <span className="text-[14px] sm:text-[16px] font-inter text-white">
                         Sécurité renforcée

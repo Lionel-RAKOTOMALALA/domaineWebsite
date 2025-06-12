@@ -1,10 +1,15 @@
 import PricingCard from "./ui/pricing-card"
 import FAQSection from "./faq-section"
 import { Title1, Paragraph } from "./ui/typography"
+import { motion } from "framer-motion"
 
 export default function PricingSection() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+    >
       <div className="bg-[#F9FAFB]">
         {/* Section d'en-tête avec fond spécial */}
         <div className="bg-[#ECF5FA] py-16">
@@ -88,6 +93,6 @@ export default function PricingSection() {
 
       {/* Section FAQ */}
       <FAQSection />
-    </>
+    </motion.div>
   )
 }

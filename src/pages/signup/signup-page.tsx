@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
+import { motion } from "framer-motion"
 import { User, Building, Mail, FileText, Eye, EyeOff, Check, Camera } from "lucide-react"
 import { SocialButton } from "../../components/ui/social-button"
 import { Input } from "../../components/ui/input"
@@ -31,7 +32,12 @@ export default function SignupPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F9FAFB] py-8 sm:py-16">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      className="min-h-screen bg-[#F9FAFB] py-8 sm:py-16"
+    >
       <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
         <div className="bg-white rounded-xl sm:rounded-2xl shadow-sm p-4 sm:p-8 lg:p-12">
           <div className="mb-8">
@@ -217,6 +223,6 @@ export default function SignupPage() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }

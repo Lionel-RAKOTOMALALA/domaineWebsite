@@ -1,7 +1,5 @@
 import type React from "react"
-import { Button } from "./button"
-import { Checkbox } from "./checkbox"
-import { Card } from "./card"
+import Checkbox from "./checkbox"
 import { cn } from "../../lib/utils"
 
 interface PricingCardProps {
@@ -10,7 +8,7 @@ interface PricingCardProps {
   description: string
   features: string[]
   recommended?: boolean
-  buttonText?: string
+  borderType?: "default" | "blue" | "dark"
   className?: string
 }
 
@@ -20,41 +18,53 @@ const PricingCard: React.FC<PricingCardProps> = ({
   description,
   features,
   recommended = false,
-  buttonText = "Choisir ce plan",
+  borderType = "default",
   className,
 }) => {
   return (
-    <Card
-      animated
-      className={cn("relative h-full flex flex-col", recommended && "border-2 border-[#028DD0] shadow-lg", className)}
+    <div
+      className={cn(
+        "bg-white rounded-2xl relative overflow-hidden w-full max-w-[420px] min-h-[480px]",
+        "shadow-[0_1px_2px_0_rgba(0,0,0,0.05),0_8px_16px_-4px_rgba(0,0,0,0.1)]",
+        className
+      )}
+      style={{
+        ...(!recommended && {
+          borderTopWidth: borderType === "blue" ? "4px" : borderType === "dark" ? "4px" : "1px",
+          borderTopColor: borderType === "blue" ? "#028DD0" : borderType === "dark" ? "#033347" : "#E5E7EB",
+          borderLeftWidth: "1px",
+          borderRightWidth: "1px",
+          borderBottomWidth: "1px",
+          borderLeftColor: "#E5E7EB",
+          borderRightColor: "#E5E7EB",
+          borderBottomColor: "#E5E7EB",
+          borderStyle: "solid"
+        })
+      }}
     >
       {recommended && (
-        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-          <span className="bg-[#028DD0] text-white px-4 py-1 rounded-full text-[12px] font-medium font-inter">
-            Recommandé
-          </span>
+        <div className="bg-[#028DD0] text-white py-2.5 px-4 text-center w-full">
+          <span className="text-sm font-medium">Recommandé</span>
         </div>
       )}
 
-      <div className="text-left mb-6">
-        <h3 className="text-[20px] font-inter font-bold text-[#012131] mb-2">{title}</h3>
-        <div className="mb-3">
-          <span className="text-[32px] font-inter font-bold text-[#023246]">{price}</span>
+      <div className="p-8">
+        <div className="mb-12">
+          <h3 className="text-lg font-inter font-bold text-[#111827] mb-5">{title}</h3>
+          <div className="mb-6">
+            <span className="text-4xl font-inter font-bold text-[#111827]">{price}</span>
+          </div>
+          <p className="text-sm font-inter font-normal text-[#6B7280] leading-relaxed">{description}</p>
         </div>
-        <p className="text-[14px] font-inter font-normal text-[#647882]">{description}</p>
-      </div>
 
-      <div className="space-y-4 mb-8 flex-grow">
-        {features.map((feature, index) => (
-          <Checkbox key={index} checked label={feature} />
-        ))}
+        <div className="space-y-6">
+          {features.map((feature, index) => (
+            <Checkbox key={index} checked label={feature} />
+          ))}
+        </div>
       </div>
-
-      <Button variant={recommended ? "primary" : "outline"} className="w-full mt-auto" size="md">
-        {buttonText}
-      </Button>
-    </Card>
+    </div>
   )
 }
 
-export { PricingCard }
+export default PricingCard

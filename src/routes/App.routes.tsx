@@ -3,7 +3,7 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Pricing from '../pages/Pricing'
 import Download from '../pages/Download'
-import Register from '../pages/Register'
+import Register from '../pages/signup'
 import ComponentShowcase from '../components/component-showcase'
 
 export const routes: RouteObject[] = [

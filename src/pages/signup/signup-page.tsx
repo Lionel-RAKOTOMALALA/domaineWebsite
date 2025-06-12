@@ -8,6 +8,7 @@ import { Input } from "../../components/ui/input"
 import { Button } from "../../components/ui/button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { Title3, Paragraph } from "../../components/ui/typography"
 
 export default function SignupPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -149,45 +150,45 @@ export default function SignupPage() {
                   />
                 </div>
                 <div className="relative z-10 flex flex-col items-center">
-                  <h2 className="text-[20px] sm:text-[24px] font-inter font-bold text-white mb-4 sm:mb-6 text-center">
+                  <Title3 className="text-[20px] sm:text-[24px] font-inter font-bold text-white mb-4 sm:mb-6 text-center">
                     Pourquoi nous choisir ?
-                  </h2>
-                  <ul className="space-y-3 sm:space-y-4 ml-0 text-left -ml-20">
+                  </Title3>
+                  <ul className="space-y-3 sm:space-y-4 ml-0 text-left -ml-4">
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="flex items-center gap-4">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
                         <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '16px' }} />
                       </div>
-                      <span className="text-[14px] sm:text-[16px] font-inter text-white">
+                      <Paragraph className="text-[14px] sm:text-[16px] font-inter text-white">
                         Interface intuitive et moderne
-                      </span>
+                      </Paragraph>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="flex items-center gap-4">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
                         <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '16px' }} />
                       </div>
-                      <span className="text-[14px] sm:text-[16px] font-inter text-white">
+                      <Paragraph className="text-[14px] sm:text-[16px] font-inter text-white">
                         Support client 24/7
-                      </span>
+                      </Paragraph>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="flex items-center gap-4">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
                         <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '16px' }} />
                       </div>
-                      <span className="text-[14px] sm:text-[16px] font-inter text-white">
+                      <Paragraph className="text-[14px] sm:text-[16px] font-inter text-white">
                         Mises à jour régulières
-                      </span>
+                      </Paragraph>
                     </li>
                     <li className="flex items-center gap-2 sm:gap-3">
                       <div className="flex items-center gap-4">
                         <div className="w-1.5 h-1.5 bg-white rounded-full flex-shrink-0"></div>
                         <FontAwesomeIcon icon={faCheck} className="text-white" style={{ fontSize: '16px' }} />
                       </div>
-                      <span className="text-[14px] sm:text-[16px] font-inter text-white">
+                      <Paragraph className="text-[14px] sm:text-[16px] font-inter text-white">
                         Sécurité renforcée
-                      </span>
+                      </Paragraph>
                     </li>
                   </ul>
                 </div>

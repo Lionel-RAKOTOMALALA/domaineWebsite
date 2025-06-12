@@ -135,12 +135,12 @@ const About = () => {
           <div className="w-full lg:w-1/2">
             <div className="relative h-[300px] sm:h-[400px] w-full max-w-[440px] mx-auto">
               <img
-                src="/public/assets/img/Entreprise1.jpg"
+                src="/assets/img/Entreprise1.jpg"
                 alt="Réunion d'équipe vue de dessus"
                 className="absolute top-0 right-0 w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover shadow-lg transform translate-x-0 sm:translate-x-8"
               />
               <img
-                src="/public/assets/img/Entreprise2.jpg"
+                src="/assets/img/Entreprise2.jpg"
                 alt="Réunion d'équipe"
                 className="absolute bottom-0 left-0 w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover shadow-lg transform -translate-x-0 sm:-translate-x-8"
               />
